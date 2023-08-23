@@ -1,0 +1,184 @@
+/* Basic sample */
+
+body {
+	overflow: hidden;
+	background-color: #dddddd;
+	margin: 0;
+	padding: 0;
+}
+
+/* HP */
+@media (width < 480px) {
+	.flipbook-viewport .container {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: auto;
+	}
+
+	.flipbook-viewport .flipbook {
+		width: 300px;
+		height: 150px;
+		left: -150px;
+		top: -100px;
+	}
+
+	.flipbook-viewport .page {
+		width: 300px;
+		height: 300px;
+		background: rgba(0, 0, 0, 0);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+	.flipbook-viewport .double {
+		width: 300px;
+		height: 150px;
+		background-size: 100% 100%;
+	}
+}
+
+/* Tablet */
+@media (width >=480px) and (width <=768px) {
+	.flipbook-viewport .container {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		margin: auto;
+	}
+
+	.flipbook-viewport .flipbook {
+		width: 700px;
+		height: 350px;
+		left: -350px;
+		top: 0px;
+	}
+
+	.flipbook-viewport .page {
+		width: 700px;
+		height: 700px;
+		background: rgba(0, 0, 0, 0);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	.flipbook-viewport .double {
+		width: 700px;
+		height: 350px;
+		background-size: 100% 100%;
+	}
+}
+
+/* Tablet */
+@media (width > 768px) {
+	.flipbook-viewport .container {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		margin: auto;
+	}
+
+	.flipbook-viewport .flipbook {
+		width: 750px;
+		height: 375px;
+		left: -380px;
+		top: 0px;
+	}
+
+	.flipbook-viewport .page {
+		width: 750px;
+		height: 750px;
+		background: rgba(0, 0, 0, 0);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	.flipbook-viewport .double {
+		width: 750px;
+		height: 375px;
+		background-size: 100% 100%;
+	}
+}
+
+/* PC */
+@media (width >=1200px) {
+	.flipbook-viewport .container {
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		margin: auto;
+	}
+
+	.flipbook-viewport .flipbook {
+		width: 1200px;
+		height: 600px;
+		left: -600px;
+		top: 0px;
+	}
+
+	.flipbook-viewport .page {
+		width: 600px;
+		height: 600px;
+		background: rgba(0, 0, 0, 0);
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+	}
+
+
+	.flipbook-viewport .double {
+		width: 1200px;
+		height: 600px;
+		background-size: 100% 100%;
+	}
+}
+
+.flipbook-viewport {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.flipbook .page {
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.flipbook-viewport .page img {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 0;
+}
+
+
+/*===================================
+    BG Video Player CSS
+=====================================*/
+.bg-video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+	.bg-video {
+		width: 100%;
+		height: auto;
+	}
+}
+
+@media (max-aspect-ratio: 16/9) {
+	.bg-video {
+		width: auto;
+		height: 100%;
+	}
+}
