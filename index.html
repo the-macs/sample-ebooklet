@@ -1,100 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>GDPS e-Booklet</title>
-	<meta name="viewport" content="width = 1050, user-scalable = no" />
-	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/modernizr.2.5.3.min.js"></script>
+    <meta charset="UTF-8">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="shortcut icon" href="assets/images/logo-gdps.webp">
+    <title>GDPS e-Booklet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/logo-gdps.webp">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/preloader.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="assets/js/turn.min.js"></script>
 </head>
 
 <body>
-	<div id="preloader">
-		<div id="status">
-			<div class="spinner">Loading...</div>
-		</div>
-	</div>
-	<div class="bg-video">
-		<img src="assets/images/background.jpg" alt="background">
-	</div>
-	<!-- #f8f9fa -->
-	<div class="flipbook-viewport">
-		<div class="container">
-			<div class="flipbook">
-				<div class="page" style="background-image:url(assets/images/pages/gdps-01-cover.png)"></div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-02-03-introduction.png)"></div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-04-05-certificate.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-06-07-our-coverage.jpg)"></div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-08-09-services.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-10-11-beyond-facility.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-12-13-beyond-clean.jpg)"></div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-14-15-beyond-secure.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-16-17-beyond-fresh.jpg)"></div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-18-19-smart-facility-1.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-20-21-beyond-sky.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-22-23-beyond-care.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-24-25-ecosystem.jpg)">
-				</div>
-				<div class="double" style="background-image:url(assets/images/pages/gdps-26-27-client-testimonial.jpg)">
-				</div>
-				<div class="page" style="background-image:url(assets/images/pages/gdps-28-back-cover.jpeg)">
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="wrapper">
+        <div class="aspect">
+            <div class="aspect-inner">
+                <div class="flipbook" id="flipbook">
+                    <div class="page"><img src="assets/pages/01.png" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/02.png" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/03.png" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/04.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/05.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/06.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/07.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/08.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/09.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/10.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/11.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/12.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/13.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/14.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/15.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/16.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/17.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/18.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/19.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/20.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/21.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/22.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/23.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/24.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/25.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/26.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/27.jpeg" draggable="false" alt="" /></div>
+                    <div class="page"><img src="assets/pages/28.jpeg" draggable="false" alt="" /></div>
+                </div>
+            </div>
+        </div>
 
-
-	<script src="assets/js/custom.js"></script>
-	<script type="text/javascript">
-
-		function loadApp() {
-
-			var flipbook = $('.flipbook');
-
-			// Check if the CSS was already loaded
-
-			if (flipbook.width() == 0 || flipbook.height() == 0) {
-				setTimeout(loadApp, 10);
-				return;
-			}
-
-			$('.flipbook .double').scissor();
-
-			// Create the flipbook
-			$('.flipbook').turn({
-				// Elevation
-				elevation: 10,
-
-				// Enable gradients
-				gradients: true,
-
-				// Auto center this flipbook
-				autoCenter: false
-
-			});
-		}
-
-		// Load the HTML4 version if there's not CSS transform
-		yepnope({
-			test: Modernizr.csstransforms,
-			yep: ['assets/js/turn.min.js'],
-			nope: ['assets/js/turn.html4.min.js'],
-			both: ['assets/js/scissor.min.js', 'assets/css/double-page.css'],
-			complete: loadApp
-		});
-
-	</script>
-
+        <script src="assets/js/script.js"></script>
+        <!-- <script src="assets/js/preloader.js"></script> -->
 </body>
 
 </html>
